@@ -6,6 +6,10 @@ VERSION=$(cat pool/VERSION |head -n 1 |xargs |sed 's|\.dev.*||g')
 
 RELEASE_TAG=v${VERSION}
 
+SETUPENV_PATH=../venv_py3
+ENV_PYTHON=${SETUPENV_PATH}/bin/python
+ENV_PIP=${SETUPENV_PATH}/bin/pip
+
 
 echo -e "\n* Releasing: ${RELEASE_TAG}"
 
@@ -37,4 +41,7 @@ NEW_VER=$(echo "${VERSION}" \
 echo "${NEW_VER}" > pool/VERSION
 git commit -m "Bump version to '${NEW_VER}'" pool/VERSION
 
-echo -e "* Released: ${PKGNAME} ${VERSION}\n"
+# install latest dev after version bump
+${ENV_PIP} install -e ./
+
+echo -e "\n* Released: ${PKGNAME} ${VERSION}\n"
