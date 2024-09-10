@@ -2,6 +2,10 @@
 *~
 *.swp
 *.orig
+*.bak
+*.pyc
+*.log
+*.db
 
 # ignore folders
 *.egg-info/
@@ -9,3 +13,5 @@
 __pycache__/
 /dist/
 /build/
+/build_src/
+/tmp/

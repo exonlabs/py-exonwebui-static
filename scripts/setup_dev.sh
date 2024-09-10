@@ -25,7 +25,7 @@ fi
 echo -e "\n- updating virtualenv packages ..."
 ${ENV_PIP} install -U pip setuptools wheel
 
-echo -e "\n- installing in develop mode ..."
-${ENV_PIP} install -e ./
+echo -e "\n- installing in editable mode ..."
+${ENV_PIP} install -e ./[dev]
 
 echo -e "\n* Done\n"

@@ -1,6 +1,6 @@
 # ExonWebUi-Static #
 
-Collected 3rd party UI static contents for the web.
+Collected 3rd party UI static contents for web applications.
 
 
 ## Installing ##
@@ -13,6 +13,6 @@ pip install -U exonwebui-static
 
 ## License ##
 
-**copyright :**  2019-2022, ExonLabs. All rights reserved.
+**copyright :**  2019 ExonLabs, All rights reserved.
 
-**license :**  BSD, see LICENSE for more details.
+**license :**  BSD 3-Clause, see LICENSE for more details.
