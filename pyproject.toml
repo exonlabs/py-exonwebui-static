@@ -1,6 +1,6 @@
 [project]
 name = "exonwebui-static"
-version = "1.2.dev"
+version = "1.2"
 description = "Collected 3rd party UI static contents for web applications."
 readme = "README.md"
 license = "BSD-3-Clause"
